@@ -70,6 +70,8 @@
     padding: 1rem;
     box-sizing: inherit;
     position: relative;
+    height: calc(100vh - 20px);
+    flex-direction: column;
   }
 
   .angular-logo {
@@ -82,6 +84,11 @@
     width: 100%;
     max-width: 700px;
     margin-bottom: 3rem;
+  }
+
+  .video-content {
+    height: 100%;
+    width: 100%;
   }
 
   .content h1 {
@@ -180,7 +187,7 @@
 <main class="main">
   <div class="content">
     <div class="left-side">
-      <svg
+      <!-- <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 982 239"
         fill="none"
@@ -224,7 +231,7 @@
           </linearGradient>
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
-      </svg>
+      </svg> -->
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
     </div>
@@ -321,6 +328,13 @@
         </a>
       </div>
     </div>
+  </div>
+
+  <div class="video-content">
+    <video controls width="640" height="480">
+      <source src="WhatCarCanYouGetForAGrand.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
   </div>
 </main>
 
